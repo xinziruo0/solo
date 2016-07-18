@@ -50,10 +50,11 @@ admin.editors.KindEditor = {
         } else {
             try {
                 this[conf.id] = KindEditor.create('#' + conf.id, {
-                    'uploadJson' : 'kindeditor/php/upyunUpload.php',
+                    uploadJson : '/jsp/upload_json.jsp',
+                    fileManagerJson : '/jsp/file_manager_json.jsp',
                     langType: language,
                     items: ["formatblock", "fontname", "fontsize", "|", "bold", "italic", "underline", "strikethrough", "forecolor", "|",
-                        "link", "unlink", "image", "media", "|", "pagebreak", "emoticons", "code", "/",
+                        "link", "unlink", "image",'multiimage', "media",'insertfile', "|", "pagebreak", "emoticons", "code", "/",
                         "undo", "redo", "|", "insertunorderedlist", "insertorderedlist", "indent", "outdent", "|",
                         "justifyleft", "justifycenter", "justifyright", "justifyfull", "|", "plainpaste", "wordpaste", "|",
                         "clearhtml", "source", "preview"

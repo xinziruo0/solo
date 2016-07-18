@@ -466,7 +466,7 @@ public final class Option {
         /**
          * Default editor type.
          */
-        public static final String DEFAULT_EDITOR_TYPE = "tinyMCE";
+        public static final String DEFAULT_EDITOR_TYPE = "KindEditor";
 
         static {
             final JSONArray signs = new JSONArray();

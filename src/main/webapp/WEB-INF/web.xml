@@ -64,6 +64,7 @@
         <url-pattern>/admin-about.do</url-pattern>
         <url-pattern>/rm-all-data.do</url-pattern>
         <url-pattern>/fix/*</url-pattern>
+        <url-pattern>/jsp/*</url-pattern>
     </filter-mapping>
     <filter>
         <filter-name>PermalinkFilter</filter-name>
@@ -97,8 +98,27 @@
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
-    
-    <!-- Error Pages -->
+
+    <!-- 上存文件和文件管理的 start -->
+    <servlet>
+        <servlet-name>upload_json</servlet-name>
+        <jsp-file>/js/lib/KindEditor/jsp/upload_json.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upload_json</servlet-name>
+        <url-pattern>/jsp/upload_json.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>file_manager_json</servlet-name>
+        <jsp-file>/js/lib/KindEditor/jsp/file_manager_json.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>file_manager_json</servlet-name>
+        <url-pattern>/jsp/file_manager_json.jsp</url-pattern>
+    </servlet-mapping>
+    <!-- 上存文件和文件管理的 end -->
+
+        <!-- Error Pages -->
     <error-page>
         <error-code>404</error-code>
         <location>/error/404.html</location>

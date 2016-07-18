@@ -43,6 +43,7 @@
     <include path="/js/**/*.png" />
     <include path="/js/**.jpg" />
     <include path="/js/**/*.jpg" />
+    <include path="/js/**/*.swf" />
         
     <include path="/skins/**.css" />
     <include path="/skins/**.css.map" />
@@ -93,5 +94,8 @@
     <include path="/CHANGE_LOGS.html" />
     <include path="/README.txt" />
     <include path="/LICENSE.txt" />
+
+    <!-- 上存文件访问 -->
+    <include path="/attached/**"/>
         
 </static-files>
